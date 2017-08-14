@@ -2,12 +2,13 @@ const express = require('express');
 const app = express();
 
 // Require all groups of routes here
-const authRoutes = require('./routes/auth.js')
+app.use(express.static(__dirname + '/build'));
 
-app.use(express.static(__dirname + '/public'));
+app.get('*', function(req,res){
+  res.sendfile(__dirname + '/build/index.html');
+})
 
-// app.use all routes here
-app.use('/auth', authRoutes)
+
 
 
 app.listen(3000, () => {
