@@ -14042,7 +14042,8 @@ var AppContainer = function (_React$Component) {
                 'div',
                 null,
                 _react2.default.createElement(_AppBar2.default, { style: { backgroundColor: "black", borderBottom: "thick solid #D4AF37" },
-                    title: 'The St. Elmo Society' }),
+                    title: 'The St. Elmo Society',
+                    iconElementLeft: _react2.default.createElement('img', { src: '/media/cross-white.png', style: { width: "5%", height: "5%" } }) }),
                 _react2.default.createElement(
                     'div',
                     { style: { zIndex: "10000", position: 'relative', width: "100%" } },

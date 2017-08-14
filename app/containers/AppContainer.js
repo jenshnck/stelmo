@@ -22,7 +22,8 @@ class AppContainer extends React.Component {
     return(
         <div>
             <AppBar style={{backgroundColor:"black", borderBottom:"thick solid #D4AF37"}}
-                 title="The St. Elmo Society"/>
+                 title=" The St. Elmo Society"
+                 iconElementLeft = {<img src='/media/cross-white.png' style={{width: "3em", height: "3em"}}/>}/>
             <div style={{zIndex: "10000", position:'relative', width: "100%"}}>
             <img key="cross" id="cross" src="/media/cross.png" style={{ height: "27%", width: "27%", margin: "0 auto", display: "block", paddingTop: "12%"}}/>
             <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
